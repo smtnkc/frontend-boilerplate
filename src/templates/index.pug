@@ -1,0 +1,12 @@
+include ./mixins.pug
+
+doctype html
+html
+	head
+		+title
+		link(rel="shortcut icon" type="image/png" href= require("./../favicon.png"))
+		+injectExtrasHead
+	body
+		section.home
+			#reactor
+			img(src= require("./../images/logo_messenger.png"))
